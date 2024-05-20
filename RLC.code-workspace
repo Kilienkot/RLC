@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../MPT/ГДиМ - Митюнин/Form"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Form"
+	}
+}
