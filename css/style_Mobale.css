@@ -1,0 +1,24 @@
+@media screen and (max-width: 480px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .container {
+    width: 90dvw;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .start .container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .start .container .start__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style_Mobale.css.map */
