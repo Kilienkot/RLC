@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+$border: 2px solid red;
+$Montserrat: Montserrat;
+
 @media screen and (max-width: 480px) {
     * {
         padding: 0;
@@ -7,21 +12,107 @@
         scroll-behavior: smooth;
     }
     .container {
-        width: 90dvw;
+        width: 80dvw;
         max-width: 100%;
         margin: 0 auto;
     }
-
+    body{
+        font-family: $Montserrat;
+    }
+    .hide{
+        transform: translateY(-10dvh);
+        transition: 0.5s;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    
     .start{
+        background: linear-gradient(to bottom, black 90%, white);
         .container{
             display: flex;
             flex-direction: column;
-            align-items: start;
+            align-items: center;
             .start__menu{
+                transition: 0.5s;
+                position: fixed;
+                background-color: black;
+                
                 width: 100%;
-                display: flex;
-                justify-content: space-between;
+                height: 10dvh;
 
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 1em;
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                li:nth-child(2){
+                    border-left: 1px solid white;
+                    border-right: 1px solid white;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                }
+            }
+            img{
+                width: 90%;
+                height: 100dvh;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .treners{
+        height: auto;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2{
+            width: 100%;
+            height: 4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $Montserrat;
+            font-weight: 800;
+            font-size: 2em;
+            color: rgba(0, 0, 0, 0.80);
+        }
+        .treners__card{
+            width: 90%;
+            height: 50dvh;
+            padding: 1em;
+            margin-bottom: 2em;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                width: auto;
+                height: 70%;
+            }
+            h3{
+                height: 20%;
+                font-size: 1.5em;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+            }
+            .nastya{
+                font-size: 1.3em;
+            }
+            p{
+                height: 10%;
+                font-size: 1em;
+                color: rgba(255, 255, 255, 0.30);
             }
         }
     }
