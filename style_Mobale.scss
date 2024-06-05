@@ -35,12 +35,15 @@ $Montserrat: Montserrat;
                 transition: 0.5s;
                 position: fixed;
                 background-color: black;
+                padding-left: 10dvw;
+                padding-right: 10dvw;
+                box-sizing: border-box;
                 
                 width: 100%;
                 height: 10dvh;
 
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
                 font-family: Montserrat;
                 font-weight: 500;
@@ -84,7 +87,7 @@ $Montserrat: Montserrat;
             color: rgba(0, 0, 0, 0.80);
         }
         .treners__card{
-            width: 90%;
+            width: 100%;
             height: 50dvh;
             padding: 1em;
             margin-bottom: 2em;
@@ -113,6 +116,150 @@ $Montserrat: Montserrat;
                 height: 10%;
                 font-size: 1em;
                 color: rgba(255, 255, 255, 0.30);
+            }
+        }
+    }
+    .sports{
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            height: auto;
+        }
+        p{
+            margin-top: 5em;
+            font-size: 1em;
+            font-weight: 500;
+            span{
+                font-weight: 700;
+                font-size: 1.2em;
+            }
+        }
+        .sports__card{
+            width: 100%;
+            height: 35dvh;
+            padding: 1.5em;
+            box-sizing: border-box;
+            margin-top: 2em;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            background-color: #CDCDCD;
+            h2{
+                font-weight: 700;
+                font-size: 2em;
+                width: 100%;
+                height: 30%;
+            }
+            .sports__card_content{
+                width: 100%;
+                height: 70%;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                p{
+                    width: 60%;
+                }
+                svg{
+                    width: 40%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .feedback{
+        background: linear-gradient(to bottom, white 95%, black);
+       .container{
+            display: flex;
+            flex-direction: column;
+       }
+       h2{
+            width: 100%;
+            height: 4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $Montserrat;
+            font-weight: 800;
+            font-size: 2em;
+            color: rgba(0, 0, 0, 0.80);
+       }
+       form{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            input{
+                background-color: #D9D9D9;
+                border: none;
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                padding: 1em;
+                box-sizing: border-box;
+                margin-top: 1em;
+                &::placeholder{
+                    font-family: $Montserrat;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+
+                &[type=submit]{
+                    background-color: #FBDE40;
+                    color: rgba(0, 0, 0, 0.5);
+                    margin-bottom: 3rem;
+                }
+            }
+            #fbig{
+                height: 10em;
+                &::placeholder {
+                    transform: translateY(-1.5em);
+                    white-space: pre-line;
+                }
+            }
+            #sbig{
+                height: 6em;
+                &::placeholder {
+                    transform: translateY(-0.5em);
+                    white-space: pre-line;
+                }
+            }
+            .feedback__ny{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                input[type=tel]{
+                    width: 61%;
+                }
+                input[type=number]{
+                    width: 35%;
+                }
+            }
+       }
+    }
+    .end{
+        background-color: black;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 5rem;
+            svg{
+                height: 30%;
+                width: auto;
+            }
+            p{
+                color: white;
+                font-size: 0.7rem;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
             }
         }
     }
