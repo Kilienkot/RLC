@@ -21,17 +21,29 @@
     <section class="treners" id="treners">
         <div class="container">
             <h2>Наши тренера</h2>
-            <div class="treners__card">
+            <div class="treners__card" id="dfdfs" data-path="vanua-popup">
                 <img src="image/vanya.png" alt="Иван Надоров">
                 <h3>Иван Надоров</h3>
                 <p>Нажми, чтоб узнать больше</p>
             </div>
-            <div class="treners__card">
+            <div class="treners__card"data-path="nastua-popup">
                 <img src="image/nastya.png" alt="Анастасия Полегаева">
                 <h3 class="nastya">Анастасия Полегаева</h3>
                 <p>Нажми, чтоб узнать больше</p>
             </div>
         </div>
+        <!-- <div class="modals">
+            <div class="container">
+                <div class="modal-overlay">
+                    <div class="modal modal--1" data-target="vanua-popup">
+                        Окно 1
+                    </div>
+                    <div class="modal modal--2" data-target="nastua-popup">
+                        Окно 2
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </section>
     <section class="sports" id="sports">
         <div class="container">
@@ -40,7 +52,7 @@
                 <h2>Триатлон</h2>
                 <div class="sports__card_content">
 
-                    <p>— Индивидуальная тренировка<br>
+                    <p>—Индивидуальная тренировка<br>
                         — Месячный план
                     </p>
                     <svg width="349" height="350" viewBox="0 0 349 350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -67,9 +79,9 @@
             <div class="sports__card">
                 <h2>Бег</h2>
                 <div class="sports__card_content">
-                    <p>— Забеги<br>
-                        — Индивидуальная тренировка<br>
-                        — Месячный план
+                    <p>—Забеги<br>
+                        —Индивидуальная тренировка<br>
+                        —Месячный план
                     </p>
                     <svg width="231" height="231" viewBox="0 0 231 231" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="231" height="231" fill="url(#pattern0_52_163)"/>
@@ -85,9 +97,9 @@
             <div class="sports__card">
                 <h2>ОФП</h2>
                 <div class="sports__card_content">
-                    <p>— Группа<br>
-                        — Индивидуальная тренировка<br>
-                        — План
+                    <p>—Группа<br>
+                        —Индивидуальная тренировка<br>
+                        —План
                     </p>
                     <svg width="231" height="231" viewBox="0 0 231 231" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="231" height="231" fill="url(#pattern0_52_166)"/>
@@ -105,16 +117,19 @@
     <section class="feedback" id="feedback">
         <div class="container">
             <h2>Хотите к нам?</h2>
-            <form method="post" action="#">
-                <input type="text" required placeholder="Как к вам обращаться?">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="a9d6674e-7528-4066-83cc-84f0625fd274">
+
+                <input name="name" type="text" required placeholder="Как к вам обращаться?" >
                 <div class="feedback__ny">
-                    <input type="tel" minlength="11" maxlength="11" required placeholder="Ваш номер телефона">
-                    <input type="number" maxlength="3" required placeholder="Возраст">
+                    <input name="tel" type="tel" minlength="11" maxlength="11" required placeholder="Ваш номер телефона">
+                    <input name="yong" type="number" maxlength="3" required placeholder="Возраст">
                 </div>
-                <input type="email" placeholder="Ваша почта, через @">
-                <input id="fbig" type="text" placeholder="У вас есть какие то проблемы?
+                <input name="email" type="email" placeholder="Ваша почта, через @">
+                <input name="problem" id="fbig" type="text" placeholder="У вас есть какие то проблемы?
                 (Жизненные нас не особо интересуют, мы больше про здоровье, но если есть что рассказать, говори:))">
-                <input id="sbig" type="text" placeholder="Был ли у вас опыт в спорте?
+                <input name="expirience" id="sbig" type="text" placeholder="Был ли у вас опыт в спорте?
                 Если да, были бы рады узнать!">
                 <input type="submit" value="Отправить заявку">
             </form>
@@ -142,5 +157,6 @@
         </div>
     </section>
     <script src="main.js"></script>
+    
 </body>
 </html>

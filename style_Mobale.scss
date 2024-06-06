@@ -18,6 +18,7 @@ $Montserrat: Montserrat;
     }
     body{
         font-family: $Montserrat;
+        background-color: white;
     }
     .hide{
         transform: translateY(-10dvh);
@@ -138,7 +139,7 @@ $Montserrat: Montserrat;
         }
         .sports__card{
             width: 100%;
-            height: 35dvh;
+            height: 13rem;
             padding: 1.5em;
             box-sizing: border-box;
             margin-top: 2em;
@@ -163,13 +164,49 @@ $Montserrat: Montserrat;
                 justify-content: space-between;
                 align-items: end;
                 p{
-                    width: 60%;
+                    width: 70%;
                 }
                 svg{
-                    width: 40%;
+                    width: 30%;
                     height: auto;
                 }
             }
+        }
+        .modal-overlay {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .modal {
+            background-color: #fff;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+        }
+        
+        .modal-overlay--visible {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .modal--visible {
+            display: block;
         }
     }
     .feedback{
@@ -188,6 +225,8 @@ $Montserrat: Montserrat;
             font-weight: 800;
             font-size: 2em;
             color: rgba(0, 0, 0, 0.80);
+            padding-top: 2em;
+            box-sizing: border-box;
        }
        form{
             display: flex;
