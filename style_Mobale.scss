@@ -3,7 +3,7 @@
 $border: 2px solid red;
 $Montserrat: Montserrat;
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
     * {
         padding: 0;
         margin: 0;
@@ -32,6 +32,10 @@ $Montserrat: Montserrat;
             display: flex;
             flex-direction: column;
             align-items: center;
+            .menu{
+                width: 100%;
+                height: 10dvh;
+            }
             .start__menu{
                 transition: 0.5s;
                 position: fixed;
@@ -61,11 +65,18 @@ $Montserrat: Montserrat;
                     padding-right: 2%;
                 }
             }
+            .start__link{
+                width: 100%;
+                height: 90dvh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
             img{
                 width: 90%;
-                height: 100dvh;
-                display: flex;
-                align-items: center;
+                transition: 1s;
             }
         }
     }
@@ -86,6 +97,14 @@ $Montserrat: Montserrat;
             font-weight: 800;
             font-size: 2em;
             color: rgba(0, 0, 0, 0.80);
+        }
+        .treners__cards{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
         }
         .treners__card{
             width: 100%;
@@ -117,6 +136,9 @@ $Montserrat: Montserrat;
                 height: 10%;
                 font-size: 1em;
                 color: rgba(255, 255, 255, 0.30);
+            }
+            span{
+                display: none;
             }
         }
     }
@@ -169,6 +191,7 @@ $Montserrat: Montserrat;
                 svg{
                     width: 30%;
                     height: auto;
+                    max-height: 152px;
                 }
             }
         }
@@ -250,6 +273,7 @@ $Montserrat: Montserrat;
                     background-color: #FBDE40;
                     color: rgba(0, 0, 0, 0.5);
                     margin-bottom: 3rem;
+                    cursor: pointer;
                 }
             }
             #fbig{
@@ -286,8 +310,14 @@ $Montserrat: Montserrat;
             justify-content: space-between;
             align-items: center;
             height: 5rem;
+            a{
+                height: 80%;
+                width: auto;
+                display: flex;
+                align-items: center;
+            }
             svg{
-                height: 30%;
+                height: 50%;
                 width: auto;
             }
             p{
@@ -298,7 +328,7 @@ $Montserrat: Montserrat;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                
+                height: 80%;
             }
         }
     }

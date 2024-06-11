@@ -6,30 +6,37 @@
     <title>Больше, чем клуб</title>
     <link rel="stylesheet" href="css/style_Desktop.css">
     <link rel="stylesheet" href="css/style_Mobale.css">
+    <link rel="wrbsite icon" type="png" href="image/logo_sm.svg">
+
 </head>
 <body>
     <section class="start" id="start">
         <div class="container">
+            <div class="menu"> </div>
             <ul class="start__menu">
-                <li><a href="#treners">Виды спорта</a></li>
-                <li><a href="#sports">О нас</a></li>
-                <li><a href="#feedback">Запись в клуб</a></li>                
+                <li><a href="#treners">О нас</a></li>
+                <li><a href="#sports">Виды спорта</a></li>
+                <li><a href="#feedback">Запись</a></li>                
             </ul>
-            <img src="image\RL_logo_inblack_v2.svg" alt="logo">
+           <a href="#" class="start__link"><img src="image\RL_logo_inblack_v2.svg" alt="logo"></a>
         </div>
     </section>
     <section class="treners" id="treners">
         <div class="container">
             <h2>Наши тренера</h2>
-            <div class="treners__card" id="dfdfs" data-path="vanua-popup">
-                <img src="image/vanya.png" alt="Иван Надоров">
-                <h3>Иван Надоров</h3>
-                <p>Нажми, чтоб узнать больше</p>
-            </div>
-            <div class="treners__card"data-path="nastua-popup">
-                <img src="image/nastya.png" alt="Анастасия Полегаева">
-                <h3 class="nastya">Анастасия Полегаева</h3>
-                <p>Нажми, чтоб узнать больше</p>
+            <div class="treners__cards">
+                <div class="treners__card" id="dfdfs" data-path="vanua-popup">
+                    <img src="image/vanya.png" alt="Иван Надоров">
+                    <h3>Иван Надоров</h3>
+                    <p class="more">Нажми, чтоб узнать больше</p>
+                    <span class="spanvis">Нажми, чтобdshadsahdsghghsghasdghsdhgdsjssdghsdhasdhjdahghgjhsadhdsahsjadg узнать больше</span>
+                </div>
+                <div class="treners__card"data-path="nastua-popup">
+                    <img src="image/nastya.png" alt="Анастасия Полегаева">
+                    <h3 class="nastya">Анастасия Полегаева</h3>
+                    <p>Нажми, чтоб узнать больше</p>
+                    
+                </div>
             </div>
         </div>
         <!-- <div class="modals">
@@ -47,7 +54,8 @@
     </section>
     <section class="sports" id="sports">
         <div class="container">
-            <p><span>Спорт - важная часть в жизни каждого</span><br>Регулярные тренировки способствуют укреплению сердечно-сосудистой системы, повышению выносливости и силы. Бег способствует развитию выносливости и укреплению мышц, плавание благотворно воздействует на сердечно-сосудистую систему и улучшает дыхательную функцию, а ОФП помогает разнообразить тренировочный процесс и укрепить все группы мышц.</p>
+            <p class="sports__info"><span>Спорт - важная часть в жизни каждого    
+            </span><br>Регулярные тренировки способствуют укреплению сердечно-сосудистой системы, повышению выносливости и силы. Бег способствует развитию выносливости и укреплению мышц, плавание благотворно воздействует на сердечно-сосудистую систему и улучшает дыхательную функцию, а ОФП помогает разнообразить тренировочный процесс и укрепить все группы мышц.</p>
             <div class="sports__card">
                 <h2>Триатлон</h2>
                 <div class="sports__card_content">
@@ -137,12 +145,13 @@
     </section>
     <section class="end" id="end">
         <div class="container">
-
-            <svg width="119" height="71" viewBox="0 0 119 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M45.4828 71V49.0805H21.3202L10.66 71H0L13.0289 46.6979C9.08079 44.4742 1.89512 38.1207 1.89512 24.3021C1.89512 8.57719 12.5552 0 21.3202 0H54.9584V71H45.4828ZM45.4826 11.5581V37.9767H20.521C17.7335 37.9767 10.7071 34.1181 10.8966 24.7786C11.1335 13.104 17.7337 11.5581 20.5212 11.5581H45.4826Z" fill="white"/>
-                <path d="M63.0261 71V0H73.9231V59.5637H117.748V71H63.0261Z" fill="white"/>
-            </svg>
-            <p>Restless Sport Club Ⓒ 2024.</p>
+            <a href="#start">
+                <svg width="119" height="71" viewBox="0 0 119 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M45.4828 71V49.0805H21.3202L10.66 71H0L13.0289 46.6979C9.08079 44.4742 1.89512 38.1207 1.89512 24.3021C1.89512 8.57719 12.5552 0 21.3202 0H54.9584V71H45.4828ZM45.4826 11.5581V37.9767H20.521C17.7335 37.9767 10.7071 34.1181 10.8966 24.7786C11.1335 13.104 17.7337 11.5581 20.5212 11.5581H45.4826Z" fill="white"/>
+                    <path d="M63.0261 71V0H73.9231V59.5637H117.748V71H63.0261Z" fill="white"/>
+                </svg>  
+            </a>
+            <p>Restless Sport Club</p>
             <div>
                 <a href="https://t.me/RestLessrun" target="_blank" rel="tg">
                     <img src="image/telegram_logo.svg" alt="tg">
@@ -157,6 +166,5 @@
         </div>
     </section>
     <script src="main.js"></script>
-    
 </body>
 </html>
