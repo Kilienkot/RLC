@@ -111,18 +111,20 @@
     justify-content: space-between;
   }
   .treners .treners__card img {
-    width: auto;
-    height: 70%;
+    width: 70%;
+    height: auto;
+    max-width: 244px;
+    max-height: 244px;
   }
   .treners .treners__card h3 {
-    height: 20%;
+    height: 100%;
     font-size: 1.5em;
     font-weight: 600;
     display: flex;
     align-items: center;
   }
   .treners .treners__card .nastya {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   .treners .treners__card p {
     height: 10%;
